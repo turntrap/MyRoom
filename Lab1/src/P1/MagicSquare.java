@@ -23,7 +23,7 @@ public class MagicSquare {
 		 for(int j=0;j<line.length;j++)
 		 {
 			 String[] strings=line[j].split("\t");
-			 if(strings.length!=line.length)//对每个数据之间是否是\t以及是否行列数相等的判断				
+			 if(strings.length!=line.length)//对于每个数据之间是否是\t以及是否行列数相等的判断				
 				 return false;
 			 for(int k = 0;k<strings.length;k++){
 				 if(strings[k].matches("[0-9]+")&&Integer.valueOf(strings[k])!=0)//对每个数据是否是正整数的判断
